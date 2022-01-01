@@ -8,7 +8,7 @@ print(p.feed.title)
 print(p.feed.link)
 print(p.feed.description)
 print('nuber of items is ',len(p.entries))
-print('number of item','datepub of item','title of item','link of item')
+print('number of item, ','datepub of item, ','title of item, ','link of item')
 for e in range(len(p.entries)):
     print('item №',e, end=', ')
     print(p.entries[e].published, end=', ')
