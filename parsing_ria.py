@@ -20,7 +20,7 @@ for e in range(len(p.entries)):
 print(array_of_news)
 # Выводим информацию о item (новостях) в csv файл:
 import csv
-with open('feeds_from_ria.csv', 'w', encoding='utf-8') as filecsv:
+with open('feeds_from_ria.csv', 'x', encoding='utf-8', newline='',) as filecsv:
     file_writer = csv.writer(filecsv,dialect='excel')
     file_writer.writerow(['number of item','datepub of item','title of item','link of item']) # названия столбцов
     for i in range(nent): # цикл перечисления информации об item (новостях) в RSS фиде:
